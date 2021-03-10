@@ -63,6 +63,8 @@ $ cd carousel
 $ open index.html
 ```
 
+<b>Obs.: </b>Para visualizar os ícones presentes na página é necessário que tenha a CDN disponibilizado no site da [Font Awesome](https://fontawesome.com/). Basta criar uma conta, copiar a TAG que for gerada e adicionar no campo indicado na página <a href="./index.html">index.html</a>.
+
 </div>
 
 <div id = "prazer">
