@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a,
+button {
+  cursor: pointer;
+}
+
+:root {
+  font-family: "Roboto", sans-serif;
+  font-size: 10px;
+
+  --background: #3a0ca3;
+  --cells: #7209b7;
+  --selected-cells: #f72585;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+
+  background: var(--background);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Estilizando a estrutura do carousel */
+.carousel {
+  width: 80%;
+  height: 25%;
+
+  background: transparent;
+}
+
+.carousel-cell {
+  width: 27%;
+  height: 100%;
+
+  background: var(--cells);
+
+  color: #fff;
+
+  font-size: 5rem;
+  font-weight: 400;
+
+  margin-right: 1rem;
+
+  border-radius: 0.5rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: background 0.2s;
+}
+
+.carousel-cell.is-selected {
+  background: var(--selected-cells);
+}
+
+/* Estilizando os botões de NEXT e BACK */
+.flickity-button {
+  background: transparent !important;
+}
+
+.flickity-prev-next-button {
+  width: 100px !important;
+  height: 100px !important;
+}
+
+.flickity-button-icon {
+  fill: white !important;
+}
+
+.flickity-button:disabled {
+  display: none;
+}
+
+/* Estilizando as bolinhas na parte de baixo do carousel */
+.flickity-page-dots {
+  bottom: -4rem !important;
+}
+
+.flickity-page-dots .dot {
+  width: 1.4rem !important;
+  height: 1.4rem !important;
+
+  opacity: 1 !important;
+
+  background: transparent !important;
+
+  border: 1px solid #fff;
+
+  border-radius: 50%;
+}
+
+.flickity-page-dots .dot.is-selected {
+  background: white !important;
+}
